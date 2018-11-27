@@ -45,26 +45,4 @@ public class MainViewModel extends ViewModel {
             return mRestaurantList;
         }
     }
-
-    /*private final FirebaseQueryLiveData mLiveData = new FirebaseQueryLiveData(RESTAURANT_REF);
-
-    private final LiveData<Restaurant> restaurantLiveData =
-            Transformations.map(mLiveData, new Deserializer());
-
-    private class Deserializer implements Function<DataSnapshot, Restaurant> {
-        @Override
-        public Restaurant apply(DataSnapshot dataSnapshot) {
-            return dataSnapshot.getValue(Restaurant.class);
-        }
-    }
-
-    @NonNull
-    public LiveData<Restaurant> getRestaurantLiveData() {
-        return restaurantLiveData;
-    }
-
-    @NonNull
-    public LiveData<DataSnapshot> getDataSnapshotLiveData() {
-        return mLiveData;
-    }*/
 }

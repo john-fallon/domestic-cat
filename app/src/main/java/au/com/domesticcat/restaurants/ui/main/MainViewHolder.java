@@ -18,14 +18,14 @@ public class MainViewHolder extends RecyclerView.ViewHolder {
 
     public MainViewHolder(@NonNull View itemView) {
         super(itemView);
-        //mAddress = itemView.findViewById(R.id.textView_address);
-        //mFeatureImage = itemView.findViewById(R.id.imageView_feature_image);
+        mAddress = itemView.findViewById(R.id.textView_address);
+        mFeatureImage = itemView.findViewById(R.id.imageView_feature_image);
         mName = itemView.findViewById(R.id.textView_name);
     }
 
     public void setItem(Restaurant item){
-        //GlideUtil.loadImage(item.getFeatureImageUrl(), mFeatureImage);
+        GlideUtil.loadImage(item.getFeatureImageUrl(), mFeatureImage);
         mName.setText(item.getName());
-        //mAddress.setText(item.getAddress());
+        mAddress.setText(item.getAddress());
     }
 }
